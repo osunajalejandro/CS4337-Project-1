@@ -12,16 +12,19 @@
 (define (main)
     ;prompt the user if batch mode is true
     (when prompt?
-        (display "Enter a number: ")) 
+        (display "Enter a number (or 'quit'): ")) 
 
-    (define n (read))
-    (displayln (+ n 10))
+    ;read input
+    (define input (string-trim (read-line)))
+
+    ;if input is 'quit' exit the program
+    (cond
+        [(string=? input "quit") (exit)]
+        ;else evaluate expression
+        [else
+            (displayln "Test if quit works")
+            (main)]
+    )
 )
 
 (main)
-
-;read input
-
-;if input is 'quit' exit the program
-
-;else evaluate expression

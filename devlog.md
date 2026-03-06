@@ -14,3 +14,7 @@ Mar 6 11:40am
 
     Finished the session at 12:27pm as I will take a break. I believe that I planned the steps to be too big. In this session I wanted to do so much such as moving forward to the conditionals and error catching but, that will be my task moving forward. In this session I did get to finish the implementation of the mode detection and I did a lot of researching through the documentation and google to find a way to read user prompt and now it works!
 
+Mar 6 12:58pm
+    After reviewing the documentation for read, I realized that it reads what they call a "single datum" so I will have problems getting 'quit' out of that to exit the program. Thankfully I found out this cool tip in the project description "read-line" and "string->number". I will now try to implement the conditional that reads quit and exits the program. I want to keep this session short before lunch and get this step done. 
+
+    Ending the session before lunch. I managed to implement the conditional that reads the input and if it is quit it quits and else it goes to the logic part of the program. I encountered a problem with quit where the escape sequence on the input was making it fail but I managed to trim the string and keep the quit input as a token to exit the program. My next step will be the calculator logic.
