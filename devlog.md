@@ -8,3 +8,9 @@ March 5 10:15pm
         - conditionals and error catching
         - prefix notation functionality
         - history implementation
+
+Mar 6 11:40am
+    In this session I want to build the overall structure of the program as stated in the previous log. I want to implement the first step which entails, the given mode detection code and accepting the user prompt, as well as hopefully moving forward with conditionals and error catching. 
+
+    Finished the session at 12:27pm as I will take a break. I believe that I planned the steps to be too big. In this session I wanted to do so much such as moving forward to the conditionals and error catching but, that will be my task moving forward. In this session I did get to finish the implementation of the mode detection and I did a lot of researching through the documentation and google to find a way to read user prompt and now it works!
+
