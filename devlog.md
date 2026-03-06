@@ -18,3 +18,14 @@ Mar 6 12:58pm
     After reviewing the documentation for read, I realized that it reads what they call a "single datum" so I will have problems getting 'quit' out of that to exit the program. Thankfully I found out this cool tip in the project description "read-line" and "string->number". I will now try to implement the conditional that reads quit and exits the program. I want to keep this session short before lunch and get this step done. 
 
     Ending the session before lunch. I managed to implement the conditional that reads the input and if it is quit it quits and else it goes to the logic part of the program. I encountered a problem with quit where the escape sequence on the input was making it fail but I managed to trim the string and keep the quit input as a token to exit the program. My next step will be the calculator logic.
+
+Mar 6 2:27pm
+    I will start implementing my expression evaluator function. While looking at the documentation I found there is an eval function that evaluates lists. Since my input is a string I would have to either convert the string to a list or use an open-output-string port. Here is where I found the implementation for the eval function https://stackoverflow.com/questions/10399315/how-to-eval-strings-in-racket The rest of knowledge from it comes from the documentation
+
+    Yet to use it, I found out I must use racket/base to make it work. I will look into that and report back :D
+
+    I found make-base-namespace which allows to attach racket/base into the environment. It now includes the operators from racket/base :p
+
+    Ending a long session for some fresh air. I have now an evaluator function that works where I must pass the input as (+ 3 3) if I want to do 3 + 3. 
+
+    Now I have to implement the history functionality and add error handling in the next sessions.
