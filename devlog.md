@@ -36,3 +36,12 @@ Mar 6 5:57pm
     List:
         - Empty string
         - Use error handling for wrong eval format or failed evaluation (I will try this after implementing the history function since I think it is kinda hard because of time and I dont know how exception handling works in racket 100%) for now it will crash.
+
+Mar 6 7:25pm
+    I will do the history function now. 
+
+    It was a lot. I had to start doing error checking to debug since I could not understand why my history function was not working. It was, just not exactly how I wanted it. Testing the program, I realized that the token for history is split into $1) including the parenthesis, since the value for the history calls are only numeric, they yeld an invalid input error. However if I input it with a space before closing the parenthesis work. Looking back although it might have been the long way, I believe that it would have been smarter to parse the entire list instead of using the evaluator function which requires the specific racket list format. 
+
+    Having said this, although the implementation is not perfect, the notation works, the calculator evaluates mathematical expressions, quit is implemented and the history (sadly) works with a couple hiccups. 
+
+    As a side note, I will now close the session to study for midterms and other projects :D
