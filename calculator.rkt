@@ -15,7 +15,6 @@
     (eval expression namespace)
 )
 
-
 (define (main)
     ;prompt the user if batch mode is true
     (when prompt?
@@ -27,6 +26,9 @@
     ;if input is 'quit' exit the program
     (cond
         [(string=? input "quit") (exit)]
+        ;Error checking
+        [(string=? input "")
+            (displayln "Error: Empty Expression")]
         ;else evaluate expression
         [else
             (displayln (calcLogic (read (open-input-string input))))

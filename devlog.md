@@ -29,3 +29,10 @@ Mar 6 2:27pm
     Ending a long session for some fresh air. I have now an evaluator function that works where I must pass the input as (+ 3 3) if I want to do 3 + 3. 
 
     Now I have to implement the history functionality and add error handling in the next sessions.
+
+Mar 6 5:57pm
+    Now I will focus on getting my error handling. I will now check what are possible errors that I might encounter and try to error proof my code using conditionals and error messages.
+
+    List:
+        - Empty string
+        - Use error handling for wrong eval format or failed evaluation (I will try this after implementing the history function since I think it is kinda hard because of time and I dont know how exception handling works in racket 100%) for now it will crash.
